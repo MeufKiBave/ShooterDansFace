@@ -6,11 +6,11 @@ public class BulletEnemy : MonoBehaviour
 
 {
     public Rigidbody2D monRigidBody;
-    public float speed;
+    public float speed = -4f;
     // Start is called before the first frame update
     void Start()
     {
-        monRigidBody.velocity = Vector3.up * speed;
+
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

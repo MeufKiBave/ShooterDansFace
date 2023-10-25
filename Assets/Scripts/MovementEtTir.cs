@@ -28,7 +28,7 @@ public class MovementEtTir : MonoBehaviour
         {
             transform.position += Vector3.right*speed;
         }
-        if (Input.GetKeyDown(KeyCode.Mouse0))
+        if (Input.GetKeyDown(KeyCode.W))
         {
             Instantiate(bullet, parent.position, parent.rotation);
         }

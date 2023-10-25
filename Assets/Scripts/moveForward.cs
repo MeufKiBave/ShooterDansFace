@@ -12,14 +12,16 @@ public class moveForward : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (Input.GetKeyDown(KeyCode.UpArrow))
-        { 
-            Instantiate(BulletEnemy, enemy.transform.position, enemy.transform.rotation);
-        }
+        
     }
     // Update is called once per frame
     void Update()
+
     {
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            Instantiate(BulletEnemy, parent.position,parent.rotation);
+        }
         transform.Translate(Vector2.down*speed);        
     }
 }
