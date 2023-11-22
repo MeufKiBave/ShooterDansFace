@@ -278,5 +278,6 @@ MonoBehaviour:
   timer: 0
   minTime: 5
   maxTime: 10
+  monJoueur: {fileID: 0}
   monRigidBody: {fileID: 6863447708074395207}
-  speed: 0.93
+  speed: 1.3

@@ -173,8 +173,8 @@ MonoBehaviour:
   timer: 0
   minTime: 5
   maxTime: 10
-  monJoueur: {fileID: 0}
-  monRigidBody: {fileID: 0}
+  monJoueur: {fileID: 8319106983400525838, guid: 19fbaf919da98e145ab0b062f635ffa5, type: 3}
+  monRigidBody: {fileID: 6863447708074395207, guid: fc99569983a1f44419e82fd6a79016f4, type: 3}
   speed: 0
 --- !u!1001 &2378028711788406501
 PrefabInstance:

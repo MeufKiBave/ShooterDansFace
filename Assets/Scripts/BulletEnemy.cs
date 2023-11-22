@@ -21,7 +21,7 @@ public class BulletEnemy : MonoBehaviour
         monRigidBody.velocity = Vector3.down * speed;
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         timer -= Time.deltaTime;
         if (timer <= 0)
@@ -33,4 +33,4 @@ public class BulletEnemy : MonoBehaviour
         timer = Random.Range(minTime, maxTime);
         }
     }
-
+    
