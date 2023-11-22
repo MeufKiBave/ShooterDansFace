@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7648189001331404202}
   - component: {fileID: 8650566655662361808}
   - component: {fileID: -4856127645805334185}
+  - component: {fileID: 7225296008463327460}
   m_Layer: 0
   m_Name: Hexagon Flat-Top 1
   m_TagString: Untagged
@@ -150,10 +151,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eeb568340f45d9a419f1b2c9ee3b031b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timer: 0
+  minTime: 0.88
+  maxTime: 4.47
   BulletEnemy: {fileID: 6470470209835675063, guid: fc99569983a1f44419e82fd6a79016f4, type: 3}
   parent: {fileID: 2179529289646074232}
   enemy: {fileID: 6128441405271233860}
-  speed: 0.01
+  speed: 0.006
+--- !u!114 &7225296008463327460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6128441405271233860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33d7feb9966d8d5429ec92d8d61c658a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: 0
+  minTime: 5
+  maxTime: 10
+  monJoueur: {fileID: 0}
+  monRigidBody: {fileID: 0}
+  speed: 0
 --- !u!1001 &2378028711788406501
 PrefabInstance:
   m_ObjectHideFlags: 0

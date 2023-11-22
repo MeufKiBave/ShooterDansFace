@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class moveForward : MonoBehaviour
 {
+    public float timer;
+
+    public float minTime = 7;
+    public float maxTime = 10;
+
     public GameObject BulletEnemy;
     public Transform parent;
     public GameObject enemy;
@@ -18,9 +23,14 @@ public class moveForward : MonoBehaviour
     void Update()
 
     {
-        if (Input.GetKeyDown(KeyCode.W))
+        timer -= Time.deltaTime;
+        if (timer <= 0)
         {
-            Instantiate(BulletEnemy, parent.position,parent.rotation);
+            if (Random.Range(0, 2) >= 1)
+            {
+                Instantiate(BulletEnemy, parent.position, parent.rotation);
+            }
+            timer = Random.Range(minTime, maxTime);
         }
         transform.Translate(Vector2.down*speed);        
     }

@@ -149,4 +149,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eeb568340f45d9a419f1b2c9ee3b031b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.004
+  timer: 0
+  minTime: 5
+  maxTime: 10
+  BulletEnemy: {fileID: 0}
+  parent: {fileID: 0}
+  enemy: {fileID: 0}
+  speed: 0.03
