@@ -155,4 +155,4 @@ MonoBehaviour:
   BulletEnemy: {fileID: 0}
   parent: {fileID: 0}
   enemy: {fileID: 0}
-  speed: 0.03
+  speed: 0.001
